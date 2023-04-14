@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>portfolio website</title>
+    <link rel="stylesheet" href="style.css" />
+    
+    <script
+      src="https://kit.fontawesome.com/71ac2064af.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div id="header">
+      <div class="container">
+        <nav>
+          <h3 id="lio">Portfo<span>lio</span></h3>
+          <ul id="sidemenu">
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <i class="fa-solid fa-circle-xmark" onclick="closemebu()"></i>
+          </ul>
+          <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+          <p id="names">Hi, my name is</p>
+          <h2>Ranjan Kumar</h2>
+          <h1>And I'm <span>Web Developer</span></h1>
+          <!-- Add more thing here -->
+          <p id="wade">
+            This is my offcial portfolio website to showes all<br />Details and
+            work experience web development.
+          </p>
+          <a href="#contact" class="btn first">HIRE ME!</a>
+        </div>
+      </div>
+    </div>
+    <!-- Here add about  -->
+
+    <div id="about">
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+            <img src="image/ranjan2.jpg" />
+          </div>
+          <div class="about-col-2">
+            <h1 class="sub-title">About <span>Me</span></h1>
+            <p>
+              "My name is Ranjan. I am from Dhanbad, Jharkhand, India. I
+              graduated in 2020 with a bachelor's degree in Electronic &
+              Communication Engneering from Kolhan University. I am a web
+              developer . I can provide clean code and pixel perfect design. I
+              also make the website more & more interactive with web animations.
+              A responsive design make your website accessible to all users,
+              regardless of their device. All my sites are lovingly hand coded.
+              I am a designer, developer, and overall thinker. My area of
+              interest are Web development and competitive coding. Apart from
+              academics i follow and play Football & Cricket.
+            </p>
+            <div class="tab-titles">
+              <p class="tab-links active-link" onclick="opentab('skills')">
+                Skills
+              </p>
+              <p class="tab-links" onclick="opentab('experience')">
+                Experience
+              </p>
+              <p class="tab-links" onclick="opentab('education')">Education</p>
+            </div>
+            <div class="tab-contents active-tab" id="skills">
+              <ul>
+                <li><span>UI/UX</span><br />Desingning Web/App interfaces</li>
+                <li><span>Web Development</span><br />Web app Development</li>
+                <li>
+                  <span>App Development</span><br />Building Android/ios apps
+                </li>
+                <li><span>JavaScrpit</span><br />Building App</li>
+                <li><span>React Js</span><br />Building Android/ios Apps</li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="experience">
+              <ul>
+                <li><span>UI/UX</span><br />Desingning Web/App interfaces</li>
+                <li><span>Web Development</span><br />Web app Development</li>
+                <li>
+                  <span>App Development</span><br />Building Android/ios apps
+                </li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="education">
+              <ul>
+                <li><span>2020</span><br />chaibasa engineering college</li>
+                <li><span>2015</span><br />Dr S.P.M inter college</li>
+                <li><span>2013</span><br />S.V.M sindri</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- -------Services -->
+    <div id="services">
+      <div class="container">
+        <h1 class="sub-title"><span>My</span> Services</h1>
+        <div class="services-list">
+          <div>
+            <i class="fa-sharp fa-solid fa-code"></i>
+            <h2>Web Design</h2>
+            <p>
+              Providing custom web design services use to convey your intended
+              business message clearly and with an impact. All websites are
+              developed as mobile responsive to ensure seamless viewing
+              experience across device.Avail our responsive web design services
+              to build a distinct website and significantly increase your
+              business potential online.
+            </p>
+            <a href="#">Learn more</a>
+          </div>
+          <div>
+            <i class="fa-solid fa-crop-simple"></i>
+            <h2>Web Development</h2>
+            <p>
+              Web designers use various tools and technologies such as HTML,
+              CSS, JavaScript, and graphic design software to create and design
+              websites. They also consider the user experience and incorporate
+              features such as responsive design, which ensures that the website
+              is optimized for viewing on different devices such as smartphones,
+              tablets, and desktop computers
+            </p>
+            <a href="#">Learn more</a>
+          </div>
+          <div>
+            <i class="fa-brands fa-app-store"></i>
+            <h2>App Design</h2>
+            <p>
+              Web designers use various tools and technologies such as HTML,
+              CSS, JavaScript, and graphic design software to create and design
+              websites. They also consider the user experience and incorporate
+              features such as responsive design, which ensures that the website
+              is optimized for viewing on different devices such as smartphones,
+              tablets, and desktop computers
+            </p>
+            <a href="#">Learn more</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- -----portfolio----- -->
+
+    <div id="portfolio">
+      <div class="container">
+        <h1 class="sub-title"><span>My</span> Work</h1>
+        <div class="work-list">
+          <div class="work">
+            <img src="image/wrs-1.jpg" />
+            <div class="layer">
+              <h3>Login Form</h3>
+              <p>
+                A login form is a user interface element that allows users to
+                enter their credentials, such as a username and password, to
+                access a website or application.
+              </p>
+              <a href="#"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="image/wrks-3.jpg" />
+            <div class="layer">
+              <h3>Instagram App</h3>
+              <p>
+                It allows users to create an account and set up a profile, where
+                they can post photos and videos, add captions and hashtags, and
+                interact with other users through comments and direct messages.
+              </p>
+              <a href="#"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="image/wrk-3.png" />
+            <div class="layer">
+              <h3>Online Shopping App</h3>
+              <p>
+                It allows users to create an account and set up a profile, where
+                they can post photos and videos, add captions and hashtags, and
+                interact with other users through comments and direct messages.
+              </p>
+              <a href="#"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+        <a href="#" class="btn">See More</a>
+      </div>
+    </div>
+
+    <!-- ---- contact--- -->
+
+    <div id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="contact-left">
+            <h1 class="sub-title">Contact <span>Me</span></h1>
+            <p>
+              <i class="fa-solid fa-paper-plane"></i>ranjankumarsnd@gmail.com
+            </p>
+            <p><i class="fa-solid fa-phone-flip"></i>8540083368</p>
+            <div class="social-icons">
+              <a href="www.facebook.com"
+                ><i class="fa-brands fa-facebook"></i
+              ></a>
+              <a href="www.instsgram.com"
+                ><i class="fa-brands fa-instagram"></i
+              ></a>
+              <a href="#www.linkedin.com/in/ranjankumar8540"
+                ><i class="fa-brands fa-linkedin"></i
+              ></a>
+              <a href="www.whatsapp.com"
+                ><i class="fa-brands fa-whatsapp"></i
+              ></a>
+            </div>
+            <a href="image/Resume.pdf" download class="btn btn2">Download CV</a>
+          </div>
+          <div class="contact-right"></div>
+          <form name="submit-to-google-sheet">
+            <input type="text" name="Name" placeholder="Your Name" required />
+            <input
+              type="email"
+              name="Email"
+              placeholder="Your Email"
+              required
+            />
+            <textarea
+              name="Message"
+              rows="6"
+              placeholder="Your Message"
+            ></textarea>
+            <button type="submit" class="btn btn2">Submit</button>
+          </form>
+          <span id="msg"></span>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>
+          Designed and Bulit by <i class="fa-solid fa-heart"></i>
+          Ranjan Kumar
+        </p>
+      </div>
+    </div>
+
+    <script>
+      var tablinks = document.getElementsByClassName("tab-links");
+      var tabcontents = document.getElementsByClassName("tab-contents");
+
+      function opentab(tabname) {
+        for (tablink of tablinks) {
+          tablink.classList.remove("active-link");
+        }
+        for (tabcontent of tabcontents) {
+          tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+      }
+
+      // -----side menu-------
+
+      var sidemeu = document.getElementById("sidemenu");
+
+      function openmenu() {
+        sidemeu.style.right = "0";
+      }
+      function closemenu() {
+        sidemeu.style.right = "-200px";
+      }
+    </script>
+
+    <script>
+      const scriptURL =
+        "https://script.google.com/macros/s/AKfycbyLRRsxpg-wcqv6p_CfHH55ZQB-AZPAY7fu7WoztSoBwz7oiOoCMX1Djy2x12T9SoSm/exec";
+      const form = document.forms["submit-to-google-sheet"];
+
+      const msg = document.getElementById("msg");
+      form.addEventListener("submit", (e) => {
+        e.preventDefault();
+        fetch(scriptURL, { method: "POST", body: new FormData(form) })
+          .then((response) => {
+            msg.innerHTML = "Message sent Successfully";
+            setTimeout(function () {
+              msg.innerHTML = "";
+            }, 5000);
+            form.reset();
+          })
+          .catch((error) => console.error("Error!", error.message));
+      });
+    </script>
+  </body>
+</html>
